@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nothing</title>
+</head>
+<body>
+    <h1>Lets Explore Animation!</h1>
+    <style>
+        @keyframes sliding{
+            .g{
+                background-color: (217,255,0);
+            }
+            .to{
+                background-color: magenta;
+            }
+        }
+        .h{
+            width: 500px;
+            height: 300px;
+            background-color: lightskyblue;
+        }
+        .g{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(217, 255, 0);
+            border-radius: 50%;
+            animation:sliding name 1s ease-in-out 0.5s 5 alternate;
+            animation-play-state: running;
+        }
+    </style>
+    <div class="h">
+        <div class="g"></div>
+    </div>
+</body>
+</html>
